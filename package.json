@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "BACKEND du projet en realisation avec Faycal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sydney-D0SSOU/BLOG.git"
+  },
+  "author": "SYDNEY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sydney-D0SSOU/BLOG/issues"
+  },
+  "homepage": "https://github.com/Sydney-D0SSOU/BLOG#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  }
+}
