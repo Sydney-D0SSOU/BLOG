@@ -2,10 +2,11 @@ const express = require('express');
 const mongoose = require ('mongoose');
 const bodyparser = require('body-parser');
 const product = require('./models/product');
+const user = require('./models/person');
 const productrouter = require('./routes/product');
-//const productCtrl  = require('./controllers/product');
+const personrouter = require('./routes/person');
 const app = express()
-const port = 3000
+const port = 3001
 app.use(express.json());
 mongoose.set('strictQuery', true);
 app.listen(port, () => {
@@ -24,5 +25,6 @@ mongoose.connect(db_url)
 app.use(express.urlencoded({extended :true}));
 app.use(bodyparser.json());
   app.use('/blog' ,productrouter);
+  app.use('/auth',personrouter);
 
   module.exports =app ;
