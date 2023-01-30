@@ -5,8 +5,8 @@ const product = require('./models/product');
 const user = require('./models/person');
 const productrouter = require('./routes/product');
 const personrouter = require('./routes/person');
-const app = express()
-const port = 3001
+const app = express() ;
+const port = 3002 ;
 app.use(express.json());
 mongoose.set('strictQuery', true);
 app.listen(port, () => {
